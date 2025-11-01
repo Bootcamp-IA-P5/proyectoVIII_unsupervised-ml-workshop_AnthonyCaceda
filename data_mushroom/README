@@ -1,0 +1,73 @@
+
+## Descripción del Dataset
+
+### Origen
+- **Nombre**: Mushroom Data Set (Agaricus and Lepiota Family)
+- **Fuente**: UCI Machine Learning Repository
+- **Donante**: Jeff Schlimmer
+- **Contacto**: David W. Aha (aha@ics.uci.edu)
+
+### Características del Dataset
+- **Número de instancias**: 8,124
+- **Número de atributos**: 22 (nominales)
+- **Atributo objetivo**: Clase (comestible o venenoso)
+- **Valores faltantes**: Sí (indicados con '?')
+
+### Descripción de los Atributos
+
+#### Atributo Clase (objetivo)
+- **clase**: e=comestible, p=venenoso
+
+#### Características del Sombrero
+- **forma_sombrero**: bell=b, conical=c, convex=x, flat=f, knobbed=k, sunken=s
+- **superficie_sombrero**: fibrous=f, grooves=g, scaly=y, smooth=s
+- **color_sombrero**: brown=n, buff=b, cinnamon=c, gray=g, green=r, pink=p, purple=u, red=e, white=w, yellow=y
+- **magulladuras**: bruises=t, no=f
+
+#### Características de las Branquias
+- **disposicion_branquias**: attached=a, descending=d, free=f, notched=n
+- **espaciado_branquias**: close=c, crowded=w, distant=d
+- **tamaño_branquias**: broad=b, narrow=n
+- **color_branquias**: black=k, brown=n, buff=b, chocolate=h, gray=g, green=r, orange=o, pink=p, purple=u, red=e, white=w, yellow=y
+
+#### Características del Tallo
+- **forma_tallo**: enlarging=e, tapering=t
+- **raiz_tallo**: bulbous=b, club=c, cup=u, equal=e, rhizomorphs=z, rooted=r, missing=?
+- **superficie_tallo_anillo**: fibrous=f, scaly=y, silky=k, smooth=s
+- **superficie_tallo_anillo_arriba**: fibrous=f, scaly=y, silky=k, smooth=s
+- **color_tallo_arriba_anillo**: brown=n, buff=b, cinnamon=c, gray=g, orange=o, pink=p, red=e, white=w, yellow=y
+- **color_tallo_debajo_anillo**: brown=n, buff=b, cinnamon=c, gray=g, orange=o, pink=p, red=e, white=w, yellow=y
+
+#### Otras Características
+- **tipo_velo**: partial=p, universal=u
+- **color_velo**: brown=n, orange=o, white=w, yellow=y
+- **numero_anillo**: none=n, one=o, two=t
+- **tipo_anillo**: cobwebby=c, evanescent=e, flaring=f, large=l, none=n, pendant=p, sheathing=s, zone=z
+- **color_esporas**: black=k, brown=n, buff=b, chocolate=h, green=r, orange=o, purple=u, white=w, yellow=y
+- **población**: abundant=a, clustered=c, numerous=n, scattered=s, several=v, solitary=y
+- **hábitat**: grasses=g, leaves=l, meadows=m, paths=p, urban=u, waste=w, woods=d
+
+## Archivos Generados
+
+Durante la ejecución del análisis, se generan los siguientes archivos en el directorio [data_mushroom/]
+1. **Visualizaciones**:
+   - `pca_variance.png`: Gráfico de varianza explicada por componentes principales
+   - `elbow_method.png`: Método del codo para determinar el número óptimo de clusters
+   - `kmeans_clustering.png`: Visualización de los clusters generados
+   - `feature_importance.png`: Importancia de las características según Random Forest
+   - `confusion_matrix.png`: Matriz de confusión del modelo supervisado
+
+2. **Datos Procesados**:
+   - `agaricus-lepiota_processed.csv`: Dataset después del preprocesamiento
+
+## Requisitos del Sistema
+
+- Python 3.8+
+- Bibliotecas listadas en [requirements.txt]
+
+## Instalación
+
+1. Clonar el repositorio:
+   ```bash
+   git clone [URL_DEL_REPOSITORIO]
+   cd proyectoVIII_unsupervised-ml-workshop_AnthonyCaceda
